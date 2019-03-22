@@ -54,7 +54,7 @@ class ImageAdapter extends PagerAdapter {
             mage.setScaleType(ImageView.ScaleType.FIT_XY);
             cardView.addView(mage);
         }else{
-            if(cardView.getChildCount() != 1){
+            if(cardView.getChildCount() < 1){
                 mage = new ImageView(mContext);
                 mage.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
                 mage.setId(count);
